@@ -601,9 +601,9 @@ section{
     opacity: 0;
 }
 
-.main-text{
-    padding-top: 130px;
-    margin-top: 200px;
+.portfolio{
+    background-color: #081b29;
+    color: #fff;
 }
 
 .main-text h2{
@@ -617,23 +617,16 @@ section{
     color: #00abf0;
 }
 
-.portfolio-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
-    margin-left: 40px;
-    margin-right: 40px;
-
-}
-
-.row{
+.work{
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
 }
 
-.row img{
+.work img{
     width: 100%;
+    height: 350px;
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
@@ -643,7 +636,7 @@ section{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1),#00abf0);
+    background: linear-gradient(rgba(0,0,0,1),#00abf0);
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -669,11 +662,12 @@ section{
     color: #000;
     font-size: 1rem;
     line-height: 1.8;
+    margin-bottom: 3px;
 }
 
 .layer i{
     color: #ff004f;
-    margin-top: 20px;
+    margin-top: 0;
     font-size: 20px;
     background: #fff;
     width: 60px;
@@ -684,11 +678,11 @@ section{
     border-radius: 50%;
 }
 
-.row:hover img{
+.work:hover img{
     transform: scale(1.1);
 }
 
-.row:hover .layer{
+.work:hover .layer{
     height: 100%;
 }
 
