@@ -15,7 +15,7 @@ body {
 }
 
 body .bi-brightness-high-fill{
-    color: rgb(240, 240, 148);
+    /* color: rgb(240, 240, 148); */
 }
 
 #preloader{
@@ -136,6 +136,14 @@ section{
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
 }
+/* 
+#text-display {
+      font-size: 32px;
+      font-weight: bold;
+      color: #00abf0;
+      text-align: center;
+      margin-top: 100px;
+    } */
 
 .home-content h1 span {
     color: #00abf0;
@@ -165,6 +173,7 @@ section{
     position: relative;
     padding: 12px 28px;
     /* background: transparent; */
+      background: rgba(255, 255, 255, 0.1); 
     border-radius: 40px;
     border: 1px solid rgba(121, 118, 118, 0.2);
     font-size: 16px;
@@ -205,7 +214,7 @@ section{
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    background-image: url('krishna1.jpg');
+    background-image: url('krishna2.jpg');
     background-size: cover;
     background-position: center;
     animation: slideTop 1s ease forwards;
@@ -222,7 +231,7 @@ section{
     left: 0;
     width: 0; */
     height: 100%;
-    background-image: url('krishna2.jpg');
+    background-image: url('krishna3.jpg');
     background-size: cover;
     border-radius: 50%;
     background-position: center;
@@ -243,7 +252,6 @@ section{
   border-bottom: 2px solid rgba(121, 118, 118, 0.2);
   /* color: #333; */
   overflow: hidden;
-
 }
 
 .quote-text::after, .quote-text::before{
@@ -252,8 +260,8 @@ section{
   width: 100%; /* length of white strip */
   height: 2px;
   background-color: #00abf0;
-  transform: translateX(-100%);
   transition: transform 2s linear;
+  /* transform: translateX(-100%); */
 }
 
 /* Top border white line */
@@ -270,6 +278,7 @@ section{
 
 .quote-text:hover{
     /* transform: translateX(-10%); */
+    /* transform: translateX(-100%); */
 }
 
 .quote-text:hover::before, .quote-text:hover::after{
@@ -301,7 +310,7 @@ section{
     margin: 15px;
     font-size: 20px;
     font-family: 'Calligraffitti';
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .about{
@@ -328,10 +337,15 @@ section{
     line-height: 1;
     text-align: left;
     margin-bottom: 40px;
+    /* font-weight: 600; */
 }
 
 .about h2 span{
+    /* color: #00abf0; */
     color: #00abf0;
+    background: linear-gradient(45deg, #434cd6, #00abf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about-text h4{
@@ -347,6 +361,22 @@ section{
     line-height: 1.4;
 }
 
+.random-text p{
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 3px 3px;
+    /* background: transparent; */
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 40px;
+    border: 1px solid rgba(32, 31, 31, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    /* box-shadow: 0 0 5px #00abf0, 0 0 25px #00abf0; */
+}
+
 .myskills h2{
     font-size: 40px;
     line-height: 1;
@@ -355,16 +385,16 @@ section{
 }
 
 .myskills h2 span{
+    /* color: #00abf0; */
     color: #00abf0;
+    background: linear-gradient(45deg, #434cd6, #00abf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .skill-inbox{
     border-radius: 10px;
-    /* background: linear-gradient(#00abf0,#0e3653); */
-    color: #fff;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
     border: 2px solid rgba(121, 118, 118, 0.2);
-    border-radius: 10px;
     transition: .5s ease;
     display: flex;
     align-items: center;
@@ -376,6 +406,23 @@ section{
     max-height: 150px;
     margin: auto;
 }
+
+
+.skill-inbox::before{
+    content: '';
+    position: absolute;
+    /* top: 0;
+    left: 0;
+    width: 0;
+    height: 0%; */
+    /* background: linear-gradient(rgba(0,0,0,1),#00abf0); */
+    border: 2px solid #00abf0;
+    /* color: #fff; */
+    z-index: -1;
+    border-radius: 10px;
+    transition: .5s;
+
+} 
 
 
 .skill-inbox .skill-icon{
@@ -396,21 +443,6 @@ section{
     transition: .5s ease;
 }
 
-.skill-inbox::before{
-    content: '';
-    position: absolute;
-    /* top: 0;
-    left: 0;
-    width: 0;
-    height: 0%; */
-    /* background: linear-gradient(rgba(0,0,0,1),#00abf0); */
-    border: 2px solid #00abf0;
-    /* color: #fff; */
-    z-index: -1;
-    border-radius: 10px;
-    transition: .5s;
-
-} 
 
 .skill-icon i{
     font-size: 40px; 
@@ -445,10 +477,18 @@ section{
     line-height: 1;
     text-align: left;
     margin-bottom: 40px;
+    /* font-weight: 700; */
+    opacity: 1;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .2s;
 }
 
 .main-text h2 span{
-    color: #00abf0;
+    /* color: #00abf0; */
+     background: linear-gradient(45deg, #434cd6, #00abf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
     /* background: linear-gradient(45deg, #0e3653, #00abf0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
@@ -467,8 +507,10 @@ section{
     height: 350px;
     transition: transform 0.5s;
     margin: 5px;
-    border: 0.5px solid #0e3653;
-
+    border: 1px solid #00abf0;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .layer{
@@ -542,6 +584,9 @@ section{
 
 .contact-text h2 span{
     color: #00abf0;
+    background: linear-gradient(45deg, #434cd6, #00abf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact-text h4{
@@ -564,6 +609,9 @@ section{
 .contact-list li{
     margin-bottom: 5px;
     display: block !important;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
 }
 
 .contact-list i{
@@ -644,6 +692,29 @@ section{
 
 .contact-form form .send:hover{
     box-shadow: 0 0 5px cyan, 0 0 25px, 0 0 30px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #00abf0;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 12px;
+  position: fixed;
+  z-index: 1;
+  left: 90%;
+  top: 90px;
+  font-size: 16px;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+#toast.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 .footer{

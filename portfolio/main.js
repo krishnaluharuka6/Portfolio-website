@@ -26,6 +26,22 @@ window.addEventListener("DOMContentLoaded", function() {
     body.style.transition = '2s';
 });
 
+const messages = ["Hello","नमस्ते", "Wassup?", "Bonjour", "राम राम"];
+    const delay = 2000; // 2 seconds per message
+
+    const textDisplay = document.getElementById("text-display");
+
+    let index = 0;
+
+    function showMessage() {
+      textDisplay.innerText = messages[index];
+      index = (index + 1) % messages.length; // loop through messages
+      setTimeout(showMessage, delay);
+    }
+
+    // Start showing the first message
+    showMessage();
+
 
 
 
@@ -36,3 +52,23 @@ var typed= new Typed(".text",{
     backDelay: 1000,
     loop: true
 });
+
+
+function copyEmail() {
+  const emailText = document.getElementById("email").innerText;
+  navigator.clipboard.writeText(emailText).then(() => {
+    showToast();
+  }).catch(err => {
+    console.error("Failed to copy: ", err);
+  });
+}
+
+function showToast() {
+  const toast = document.getElementById("toast");
+  toast.className = "show";
+  setTimeout(() => {
+    toast.className = toast.className.replace("show", "");
+  }, 3000); // Toast visible for 3 seconds
+}
+
+                    
