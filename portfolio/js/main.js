@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", function() {
     body.style.background = '#0e3653';
     body.style.color = '#e3f2fd';
     navbar.style.background='#0e3653';
-    body.style.transition = '2s';
+    // body.style.transition = '2s';
 });
 
 const messages = ["Hello","नमस्ते", "Wassup?", "Bonjour", "राम राम"];
@@ -41,9 +41,6 @@ const messages = ["Hello","नमस्ते", "Wassup?", "Bonjour", "राम
 
     // Start showing the first message
     showMessage();
-
-
-
 
 var typed= new Typed(".text",{
     strings:["Web Developer","Curious Learner","Problem Solver"],

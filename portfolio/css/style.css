@@ -19,7 +19,7 @@ body .bi-brightness-high-fill{
 }
 
 #preloader{
-    background: #051129 url(preloadernobg.gif) no-repeat center;
+    background: #051129 url("/portfolio/images/preloadernobg.gif") no-repeat center;
     min-height: 100vh;
     width: 100%;
     position: fixed;
@@ -214,7 +214,7 @@ section{
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    background-image: url('krishna2.jpg');
+    background-image: url("/portfolio/images/krishna/krishna2.jpg");
     background-size: cover;
     background-position: center;
     animation: slideTop 1s ease forwards;
@@ -231,7 +231,7 @@ section{
     left: 0;
     width: 0; */
     height: 100%;
-    background-image: url('krishna3.jpg');
+    background-image: url("/portfolio/images/krishna/krishna3.jpg");
     background-size: cover;
     border-radius: 50%;
     background-position: center;
